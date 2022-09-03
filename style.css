@@ -1,0 +1,149 @@
+form {
+	width: 27%;
+	margin: auto;
+	background-image: linear-gradient(to top right, midnightblue, black, red);
+	margin-top: 7%;
+	padding-bottom: 28px;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+fieldset legend {
+	font-size: 13px;
+	font-weight: 900;
+	color: white;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 27px;
+	font-family: Helvetica;
+}
+
+.form-group input {
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	border: none;
+	color: white;
+	font-weight: 600;
+	outline: none;
+}
+
+.form-group label {
+	font-size: 17px;
+	margin-bottom: 8px;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	color: white; 
+	font-size: 14px;
+	text-align: center;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-group label {
+	font-size: 17px;
+	margin-bottom: 8px;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.form-group input{
+	width: 100%;
+	height: 30px;
+	color: black;
+	border-radius: 2px;
+	/* background-color: grey; */
+	border: none;
+	outline: none;
+	margin-bottom: 11px;
+}
+
+button{
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	background-color: green;
+	font-size: 17px;
+	font-weight: 900;
+	color: white;
+	margin-top: 13px;
+}
+
+.refresh {
+	width: 10%;
+	margin: auto;
+	/* margin-left: 91%; */
+	float: right;
+	height: 30px;
+	border-radius: 2px;
+	background-color: red;
+	font-size: 17px;
+	font-weight: 900;
+	color: white;
+	margin-top: 13px;
+}
+
+.refreshDiv {
+	width: 100%;
+}
+
+button:hover {
+	background-color: orange;
+	color: blue;
+}
+
+.form-check label {
+	color: white;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 20px;
+	/* width: 30%; */
+	font-size: 26px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/* display: none; */
+}
+
+th, td {
+	padding: 15px;
+	border: 5px double black;
+}
+
+.container {
+	display: flex;
+	display: none;
+}
+
+#ddn {
+	display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+	.refresh {
+		float: left;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 20 px;
+	}
+
+	.container {
+		display: block;
+		padding-top: 10%;
+	}
+
+	form {
+		width: 80%;
+	}
+}

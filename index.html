@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tv Subscriptions</title>
+	<script src="./app.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<h2>Click the button below to display packages and prices and double click to hide</h2>
+	<button onclick="showPackages()" ondblclick="remove()">Show packages</button>
+	<div class="refreshDiv">
+		<button class="refresh" onclick="refresh()">Refresh</button>
+	</div>
+
+	<div class="container" id="container">
+		<table id="tab">
+			<thead>
+				<tr>
+					<th>S/N</th>
+					<th>Package</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+	
+			<tbody>
+				<tr id="start">
+					<td>1</td>
+					<td>Starter</td>
+					<td>$4,500</td>
+				</tr>
+	
+				<tr id="compact">
+					<td>2</td>
+					<td>Compact</td>
+					<td>$7,200</td>
+				</tr>
+	
+				<tr id="compact-plus">
+					<td>3</td>
+					<td>Compact Plus</td>
+					<td>$11,500</td>
+				</tr>
+	
+				<tr id="premium">
+					<td>4</td>
+					<td>Premium</td>
+					<td>$19,350</td>
+				</tr>
+	
+			</tbody>
+		</table>
+	
+	
+		<form action="/" name="myForm"> 
+			<fieldset>
+				<legend>Fill in the package name you wish to purchase</legend>
+				<div class="form-group">
+					<label>Package name: </label> <br>
+					<input type="text" name="package" id="inp" placeholder="Package">
+				</div>
+
+				<div class="form-group" id="ddn">
+					<label>Package price: </label> <br>
+					<input type="number" name="price" id="price" placeholder="$">
+				</div>
+	
+				<div class="submit-group">
+					<button type="button" name="button" id="submit" onclick="next()">Next</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
